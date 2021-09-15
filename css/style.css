@@ -20,6 +20,10 @@ a {
   color: #000;
 }
 
+li {
+  list-style: none;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,6 +273,89 @@ a {
 }
 
 /*---------------------------
+ここから送料無料
+----------------------------*/
+.freeShipping {
+  margin: 80px auto;
+  text-align: center;
+}
+
+.freeShipping img {
+  width: 80%;
+}
+
+/*---------------------------
+ここからキーワード検索
+----------------------------*/
+.keywordSearch {
+  background-color: #fcdcc4;
+  width: 100%;
+  height: auto;
+  padding: 24px 0;
+}
+
+.keywordSearch__container {
+  width: 976px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.keywordSearch__table {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.keywordSearch__table td .searchBox {
+  border: none;
+  outline: none;
+  padding: 2px 0 0 24px;
+  width: 200px;
+  background-color: transparent;
+}
+
+.keywordSearch__table td .sendBtn {
+  padding: 8px 24px 8px 0;
+  height: 24px;
+}
+
+.keywordSearch__table td .sendBtn:hover {
+  opacity: 0.5;
+}
+
+.hotSellingList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotSellingList--text {
+  margin: 0 8px 0 24px;
+}
+
+.hotSellingList a {
+  padding: 8px 12px;
+}
+
+.hotSellingList a:hover {
+  opacity: 0.5;
+}
+
+/*---------------------------
 ここからフッター
 ----------------------------*/
 #footer-wrapper {
@@ -449,6 +536,31 @@ a {
   /*---------------------------
   ここからスライダー
   ----------------------------*/
+  /*---------------------------
+  ここから送料無料
+  ----------------------------*/
+  .freeShipping {
+    margin: 8% auto;
+  }
+  .freeShipping img {
+    width: 85%;
+  }
+  /*---------------------------
+  ここからキーワード検索
+  ----------------------------*/
+  .keywordSearch__container {
+    width: 90%;
+  }
+  .keywordSearch__container form {
+    width: 60%;
+  }
+  .keywordSearch__table {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .hotSellingList li {
+    margin: 8px;
+  }
 }
 
 /*---------------------------
@@ -487,5 +599,17 @@ a {
   /*---------------------------
   ここからスライダー
   ----------------------------*/
+  /*---------------------------
+  ここからキーワード検索
+  ----------------------------*/
+  .keywordSearch__container form {
+    width: 90%;
+  }
+  .keywordSearch__table {
+    margin-bottom: 12px;
+  }
+  .hotSellingList li {
+    margin: 6px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

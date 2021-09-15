@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+      integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+      crossorigin="anonymous"
+    ></script>
     <title>aba-japan</title>
     <script>
       (function (d) {
@@ -180,7 +186,7 @@
     <!-- ヘッダー終了 -->
     <!-- ここからメインコンテンツ -->
     <main>
-      <!-- ここからスライダーで商品紹介 -->
+      <!-- ここからスライダーセクションで商品紹介 -->
       <section class="slickContainer">
         <ul class="slider slick-slider">
           <li>
@@ -210,6 +216,66 @@
           </li>
         </ul>
       </section>
+      <!-- スライダーセクション終了 -->
+      <!-- ここから送料無料 -->
+      <section class="freeShipping container">
+        <img src="img/free-shipping.png" alt="全国一律送料無料" />
+      </section>
+      <!-- 送料無料セクション終了 -->
+      <!-- ここからキーワード検索セクション -->
+      <section class="keywordSearch">
+        <div class="keywordSearch__container">
+          <!-- キーワード検索フォーム -->
+          <form
+            method="get"
+            action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+          >
+            <table class="keywordSearch__table">
+              <tbody>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="searchBox"
+                      name="sitem"
+                      placeholder="キーワードを入力"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="image"
+                      src="img/icon-search.png"
+                      class="sendBtn"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <input value="A" type="hidden" name="f" /><input
+              value="6"
+              type="hidden"
+              name="sv"
+            /><input value="374120" type="hidden" name="sid" />
+          </form>
+          <!-- 売れ筋商品リスト -->
+          <ul class="hotSellingList">
+            <li class="hotSellingList--text">売れ筋▶︎▶︎</li>
+            <li>
+              <a href="#">サーモマネジャー</a>
+            </li>
+            <li>
+              <a href="#">電子温度計</a>
+            </li>
+            <li>
+              <a href="#">二酸化炭素濃度系</a>
+            </li>
+            <li>
+              <a href="#">アルテケア</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- キーワード検索セクション終了 -->
     </main>
     <footer id="footer" class="container">
       <h2 class="section-title">SHOP GUIDE</h2>
