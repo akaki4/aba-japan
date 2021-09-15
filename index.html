@@ -45,18 +45,21 @@
     <!-- ここからヘッダー -->
     <header class="header container">
       <div class="header__inner">
-        <div class="hamburgerBtn">
-          <div class="hamburgerBtn__menu">
+        <!-- ハンバーガーメニューボタン -->
+        <div id="js-hamburgerBtn" class="hamburgerBtn">
+          <div id="js-hamburgerBtnMenu" class="hamburgerBtn__menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
+        <!-- ヘッダーロゴ -->
         <h1 class="header__logo">
           <a href="#">
             <img src="img/logo.png" alt="aba-japanロゴ" />
           </a>
         </h1>
+        <!-- PC用のグローバルメニュー -->
         <div class="headerMenu flex">
           <nav>
             <ul class="headerMenuList flex">
@@ -110,6 +113,7 @@
                 </form>
               </li>
               <li>
+                <!-- カードボタン -->
                 <a href="#" class="cartBtn">
                   <img src="img/icon-cart.png" alt="カートロゴ" />
                 </a>
@@ -117,6 +121,7 @@
             </ul>
           </nav>
         </div>
+        <!-- タブレット、スマートフォンサイズ時の検索、カートボタン -->
         <div class="spMenuBtn">
           <form
             method="get"
@@ -153,14 +158,15 @@
             <img src="img/icon-cart.png" alt="カートロゴ" />
           </a>
         </div>
-        <ul id="sp-hamburger-list">
-          <li><a href="#" class="hamburger-section">TOP</a></li>
-          <li><a href="#" class="hamburger-section">商品検索</a></li>
-          <li><a href="#" class="hamburger-section">会社概要</a></li>
+        <!-- ハンバーガーメニュークリック時に表示されるグローバルメニュー画面 -->
+        <ul id="js-spMenu" class="spMenu">
+          <li><a href="#" class="hamburgerSection">TOP</a></li>
+          <li><a href="#" class="hamburgerSection">商品検索</a></li>
+          <li><a href="#" class="hamburgerSection">会社概要</a></li>
           <li>
-            <a href="#" class="hamburger-section">決済・配送・返品</a>
+            <a href="#" class="hamburgerSection">決済・配送・返品</a>
           </li>
-          <li><a href="#" class="hamburger-section">よくある質問</a></li>
+          <li><a href="#" class="hamburgerSection">よくある質問</a></li>
         </ul>
       </div>
     </header>

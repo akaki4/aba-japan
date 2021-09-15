@@ -17,13 +17,13 @@ $(function () {
   //     },
   //   ]
   // });
-  // // ハンバーガーメニューの処理
-  // $('.sp-hamburger-btn').on('click', function(){
-  //   $('.sp-hamburger-menu').toggleClass('close');
-  //   $('#sp-hamburger-list').toggleClass('open');
-  // });
-  // $(".hamburger-section").on("click", function(){
-  //   $('.sp-hamburger-menu').toggleClass('close');
-  //   $('#sp-hamburger-list').toggleClass('open');
-  // });
+  // ハンバーガーメニューの処理
+  $("#js-hamburgerBtn").on("click", function () {
+    $("#js-hamburgerBtnMenu").toggleClass("close");
+    $("#js-spMenu").toggleClass("open");
+  });
+  $(".hamburgerSection").on("click", function () {
+    $("#js-spMenu").toggleClass("close");
+    $("#js-spMenu").toggleClass("open");
+  });
 });

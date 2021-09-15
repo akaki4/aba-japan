@@ -143,7 +143,7 @@ a {
   width: 100%;
 }
 
-#sp-hamburger-list {
+.spMenu {
   top: 60px;
   left: 0;
   right: 0;
@@ -161,19 +161,19 @@ a {
   visibility: hidden;
 }
 
-#sp-hamburger-list li {
+.spMenu li {
   border-bottom: 1px solid gray;
   letter-spacing: 4px;
 }
 
-#sp-hamburger-list li a {
+.spMenu li a {
   padding: 25px 0;
   color: #fff;
   display: block;
   font-size: 14px;
 }
 
-#sp-hamburger-list.open {
+.spMenu.open {
   visibility: visible;
   opacity: 1;
 }
@@ -430,6 +430,9 @@ a {
   }
   .headerSearchTable {
     margin-top: 4px;
+  }
+  .headerSearchTable .searchBox {
+    width: 120px !important;
   }
   .headerMenu {
     display: none;

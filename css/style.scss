@@ -129,7 +129,7 @@ a {
   }
 }
 
-#sp-hamburger-list {
+.spMenu {
   top: 60px;
   left: 0;
   right: 0;
@@ -155,7 +155,7 @@ a {
     }
   }
 }
-#sp-hamburger-list.open {
+.spMenu.open {
   visibility: visible;
   opacity: 1;
 }
@@ -383,6 +383,9 @@ a {
   }
   .headerSearchTable {
     margin-top: 4px;
+    .searchBox {
+      width: 120px !important;
+    }
   }
   .headerMenu {
     display: none;
