@@ -318,6 +318,7 @@ li {
 ----------------------------*/
 .pickup {
   width: 976px;
+  margin: 0 auto 80px;
   &__topImg {
     width: 100%;
     margin-bottom: 64px;
@@ -339,6 +340,42 @@ li {
     small {
       font-size: 1.4rem;
     }
+  }
+}
+
+/*---------------------------
+ここからカテゴリー
+----------------------------*/
+.category {
+  background-color: #E4E4E3;
+  padding-bottom: 80px;
+  &__container {
+    width: 976px;
+    margin: 0 auto;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+}
+.categoryBox {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  img {
+    width: 30%;
+    margin-right: 12px;
+  }
+  p {
+    border-bottom: 1px solid #000;
+    width: 70%;
+    text-align: center;
+    font-size: 2.4rem;
+    padding-bottom: 16px;
+  }
+  .nosmoking {
+    text-align: left;
   }
 }
 
@@ -545,6 +582,18 @@ li {
   ----------------------------*/
   .pickup {
     width: 90%;
+    margin: 0 auto 56px;
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  /*---------------------------
+  ここからカテゴリー
+  ----------------------------*/
+  .category {
+    &__container {
+      width: 90%;
+    }
     &__grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -627,6 +676,27 @@ li {
     &__grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 1.6rem;
+    }
+  }
+  
+  /*---------------------------
+  ここからカテゴリー
+  ----------------------------*/
+  .category {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .categoryBox {
+    display: block;
+    text-align: center;
+    padding: 0;
+    p {
+      font-size: 1.6rem;
+      width: 100%;
+    }
+    .nosmoking {
+      text-align: center;
     }
   }
 }

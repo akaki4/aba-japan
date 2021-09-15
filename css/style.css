@@ -359,6 +359,7 @@ li {
 ----------------------------*/
 .pickup {
   width: 976px;
+  margin: 0 auto 80px;
 }
 
 .pickup__topImg {
@@ -389,6 +390,54 @@ li {
 
 .pickupImgBox p small {
   font-size: 1.4rem;
+}
+
+/*---------------------------
+ここからカテゴリー
+----------------------------*/
+.category {
+  background-color: #E4E4E3;
+  padding-bottom: 80px;
+}
+
+.category__container {
+  width: 976px;
+  margin: 0 auto;
+}
+
+.category__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.categoryBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+}
+
+.categoryBox img {
+  width: 30%;
+  margin-right: 12px;
+}
+
+.categoryBox p {
+  border-bottom: 1px solid #000;
+  width: 70%;
+  text-align: center;
+  font-size: 2.4rem;
+  padding-bottom: 16px;
+}
+
+.categoryBox .nosmoking {
+  text-align: left;
 }
 
 /*---------------------------
@@ -606,8 +655,19 @@ li {
   ----------------------------*/
   .pickup {
     width: 90%;
+    margin: 0 auto 56px;
   }
   .pickup__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  /*---------------------------
+  ここからカテゴリー
+  ----------------------------*/
+  .category__container {
+    width: 90%;
+  }
+  .category__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -679,6 +739,25 @@ li {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
+  }
+  /*---------------------------
+  ここからカテゴリー
+  ----------------------------*/
+  .category__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .categoryBox {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .categoryBox p {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .categoryBox .nosmoking {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
