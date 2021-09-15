@@ -42,73 +42,132 @@
     </script>
   </head>
   <body>
-    <header id="gnav" class="container-md">
-      <div id="gnav-inner">
-        <div class="sp-hamburger-btn">
-          <div class="sp-hamburger-menu">
+    <!-- ここからヘッダー -->
+    <header class="header container">
+      <div class="header__inner">
+        <div class="hamburgerBtn">
+          <div class="hamburgerBtn__menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
-        <ul id="sp-hamburger-list">
-          <li><a href="#" class="hamburger-section">HOME</a></li>
-          <li><a href="#" class="hamburger-section">PRODUCTS</a></li>
-          <li><a href="#" class="hamburger-section">INFORMATION</a></li>
-          <li><a href="#" class="hamburger-section">REVIEW</a></li>
-          <li><a href="#" class="hamburger-section">COMPANY</a></li>
-          <li><a href="#" class="hamburger-section">CONTACT</a></li>
-        </ul>
-        <h1 id="gnav-logo" class="t-center">
+        <h1 class="header__logo">
           <a href="#">
-            <img src="img/" alt="aba-japanロゴ" />
+            <img src="img/logo.png" alt="aba-japanロゴ" />
           </a>
         </h1>
-        <div class="sp-menu-btn">
-          <a href="#" id="search-btn">
-            <img src="img/" alt="検索ロゴ" />
-          </a>
-          <a href="#" id="cart-btn" class="ml16">
-            <img src="img/" alt="カートロゴ" />
-          </a>
-        </div>
-        <div id="gnav-menu" class="flex">
+        <div class="headerMenu flex">
           <nav>
-            <ul class="gnav-menu-list flex">
+            <ul class="headerMenuList flex">
               <li>
-                <a href="#" class="pl0">HOME</a>
+                <a href="#" class="pl0">TOP</a>
               </li>
               <li>
-                <a href="#">PRODUCTS</a>
-              </li>
-              <li>
-                <a href="#">配送・返品</a>
-              </li>
-              <li>
-                <a href="#">レビュー</a>
+                <a href="#">商品検索</a>
               </li>
               <li>
                 <a href="#">会社概要</a>
               </li>
               <li>
-                <a href="#">お問い合わせ</a>
+                <a href="#">決済・配送・返品</a>
+              </li>
+              <li>
+                <a href="#">よくある質問</a>
+              </li>
+              <li>
+                <!-- 検索ボタン -->
+                <form
+                  method="get"
+                  action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+                >
+                  <table class="headerSearchTable">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input
+                            type="text"
+                            class="searchBox"
+                            name="sitem"
+                            placeholder="商品名を入力"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="image"
+                            src="img/icon-search.png"
+                            class="sendBtn"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <input value="A" type="hidden" name="f" /><input
+                    value="6"
+                    type="hidden"
+                    name="sv"
+                  /><input value="374120" type="hidden" name="sid" />
+                </form>
+              </li>
+              <li>
+                <a href="#" class="cartBtn">
+                  <img src="img/icon-cart.png" alt="カートロゴ" />
+                </a>
               </li>
             </ul>
           </nav>
-          <div class="gnav-menu-btn flex">
-            <a href="#" id="search-btn">
-              <img src="img/" alt="検索ロゴ" />
-            </a>
-            <a href="#" id="cart-btn" class="ml16">
-              <img src="img/" alt="カートロゴ" />
-            </a>
-          </div>
         </div>
+        <div class="spMenuBtn">
+          <form
+            method="get"
+            action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+          >
+            <table class="headerSearchTable">
+              <tbody>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="searchBox"
+                      name="sitem"
+                      placeholder="商品名を入力"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="image"
+                      src="img/icon-search.png"
+                      class="sendBtn"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <input value="A" type="hidden" name="f" /><input
+              value="6"
+              type="hidden"
+              name="sv"
+            /><input value="374120" type="hidden" name="sid" />
+          </form>
+          <a href="#" class="cartBtn">
+            <img src="img/icon-cart.png" alt="カートロゴ" />
+          </a>
+        </div>
+        <ul id="sp-hamburger-list">
+          <li><a href="#" class="hamburger-section">TOP</a></li>
+          <li><a href="#" class="hamburger-section">商品検索</a></li>
+          <li><a href="#" class="hamburger-section">会社概要</a></li>
+          <li>
+            <a href="#" class="hamburger-section">決済・配送・返品</a>
+          </li>
+          <li><a href="#" class="hamburger-section">よくある質問</a></li>
+        </ul>
       </div>
     </header>
+    <!-- ヘッダー終了 -->
     <main>
       <section id="slick-container">
-        <ul class="slider" class="slick-slider container-md">
+        <ul class="slider" class="slick-slider container">
           <li>
             <a href="#">
               <img alt="画像2" src="img/" />
@@ -137,7 +196,7 @@
         </ul>
       </section>
     </main>
-    <footer id="footer" class="container-md">
+    <footer id="footer" class="container">
       <h2 class="section-title">SHOP GUIDE</h2>
       <div id="footer-wrapper">
         <div class="footer-columns">
@@ -155,13 +214,13 @@
         <div class="footer-columns">
           <h3>配送について</h3>
           <div class="footer-columns-details">
-            <ul>
-              <li class="pb4">配送は佐川急便でお届けいたします。</li>
-              <li>
-                ご注文確認（前払いの場合ご入金確認）の 2〜3
-                日での発送を行なっております。
-              </li>
-            </ul>
+            <p class="mb16">
+              お支払いはクレジットカード、銀行振込、後払い決済、ApplePay、セブンイレブンがご利用いただけます。
+            </p>
+            <p>
+              ※クレジットカードのセキュリティは SSL
+              というシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+            </p>
           </div>
         </div>
         <div class="footer-columns">
