@@ -33,12 +33,11 @@ li {
   margin: 0 auto;
 }
 
-.section-title {
+.sectionTitle {
   letter-spacing: 2px;
-  font-family: "Gill Sans", sans-serif;
-  font-size: 18px;
+  font-size: 5.6rem;
   text-align: center;
-  padding: 60px 0;
+  padding: 80px 0;
   font-weight: 400;
 }
 
@@ -315,6 +314,35 @@ li {
 }
 
 /*---------------------------
+ここからピックアップ
+----------------------------*/
+.pickup {
+  width: 976px;
+  &__topImg {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+  }
+}
+.pickupImgBox {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  p {
+    display: inline-block;
+    margin: 24px 0;
+    small {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/*---------------------------
 ここからフッター
 ----------------------------*/
 #footer-wrapper {
@@ -390,6 +418,11 @@ li {
 
   .container {
     width: 100%;
+  }
+  
+  .sectionTitle {
+    font-size: 4.8rem;
+    padding: 56px 0;
   }
 
   /*---------------------------
@@ -506,6 +539,16 @@ li {
       margin: 8px;
     }
   }
+  
+  /*---------------------------
+  ここからピックアップ
+  ----------------------------*/
+  .pickup {
+    width: 90%;
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 /*---------------------------
@@ -515,9 +558,8 @@ li {
   /*---------------------------
   共通設定
   ----------------------------*/
-  .section-title {
-    padding: 50px 0;
-    font-size: 18px;
+  .sectionTitle {
+    font-size: 3.2rem;
   }
 
   /*---------------------------
@@ -547,6 +589,15 @@ li {
   ----------------------------*/
   
   /*---------------------------
+  ここから送料無料
+  ----------------------------*/
+  .freeShipping {
+    img {
+      width: 90%;
+    }
+  }
+  
+  /*---------------------------
   ここからキーワード検索
   ----------------------------*/
   .keywordSearch {
@@ -562,6 +613,20 @@ li {
   .hotSellingList {
     li {
       margin: 6px;
+    }
+  }
+  
+  /*---------------------------
+  ここからピックアップ
+  ----------------------------*/
+  .pickup {
+    width: 90%;
+    &__topImg {
+      margin-bottom: 40px;
+    }
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.6rem;
     }
   }
 }
