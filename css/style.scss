@@ -186,12 +186,12 @@ a {
 /*---------------------------
 ここからスライダー
 ----------------------------*/
+.slickContainer {
+}
+
 .slider {
   width: 100%;
   margin: 0 auto;
-  li {
-    margin: 0 10px;
-  }
   img {
     width: 100% !important;
     min-width: 100%;
@@ -232,11 +232,11 @@ a {
   opacity: 1;
 }
 .slick-next:before {
-  background: url(../top-img/arrow-right.png) !important;
+  background: url(../img/arrow-right.png) !important;
   background-size: contain !important;
 }
 .slick-prev:before {
-  background: url(../top-img/arrow-left.png) !important;
+  background: url(../img/arrow-left.png) !important;
   background-size: contain !important;
 }
 
@@ -317,6 +317,10 @@ a {
   /*---------------------------
   共通設定
   ----------------------------*/
+  main {
+    padding-top: 60px;
+  }
+
   .container {
     width: 100%;
   }
@@ -397,6 +401,12 @@ a {
     .searchBox {
       width: 120px !important;
     }
+  }
+
+  /*---------------------------
+  ここからスライダー
+  ----------------------------*/
+  .slickContainer {
   }
 }
 

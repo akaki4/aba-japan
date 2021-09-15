@@ -15,22 +15,19 @@ $(function () {
     $("#js-searchForm").show();
   });
 
-  // // スライダーの処理
-  // $('.slider').slick({
-  //   autoplay: true,
-  //   autoplaySpeed:5000,
-  //   dots:true,
-  //   centerMode: true,
-  //   centerPadding: '10%',
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1080,
-  //       settings: {
-  //         centerMode: false,
-  //         centerPadding: '0%',
-  //       }
-  //     },
-  //   ]
-  // });
+  // スライダーの処理
+  $(".slider").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerMode: false,
+          centerPadding: "0%",
+        },
+      },
+    ],
+  });
 });

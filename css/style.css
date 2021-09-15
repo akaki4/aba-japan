@@ -209,10 +209,6 @@ a {
   margin: 0 auto;
 }
 
-.slider li {
-  margin: 0 10px;
-}
-
 .slider img {
   width: 100% !important;
   min-width: 100%;
@@ -255,12 +251,12 @@ a {
 }
 
 .slick-next:before {
-  background: url(../top-img/arrow-right.png) !important;
+  background: url(../img/arrow-right.png) !important;
   background-size: contain !important;
 }
 
 .slick-prev:before {
-  background: url(../top-img/arrow-left.png) !important;
+  background: url(../img/arrow-left.png) !important;
   background-size: contain !important;
 }
 
@@ -362,6 +358,9 @@ a {
   /*---------------------------
   共通設定
   ----------------------------*/
+  main {
+    padding-top: 60px;
+  }
   .container {
     width: 100%;
   }
@@ -447,6 +446,9 @@ a {
   .spMenuBtn .searchBox {
     width: 120px !important;
   }
+  /*---------------------------
+  ここからスライダー
+  ----------------------------*/
 }
 
 /*---------------------------
