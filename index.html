@@ -123,9 +123,12 @@
         </div>
         <!-- タブレット、スマートフォンサイズ時の検索、カートボタン -->
         <div class="spMenuBtn">
+          <!-- 検索ボタンがクリックされるまで非表示 -->
           <form
             method="get"
             action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+            class="searchForm"
+            id="js-searchForm"
           >
             <table class="headerSearchTable">
               <tbody>
@@ -154,6 +157,10 @@
               name="sv"
             /><input value="374120" type="hidden" name="sid" />
           </form>
+          <!-- スマートフォン時、下記の検索ボタンをクリックすると、上記のformタグ内の検索バーが表示される -->
+          <div class="spSearchBtn">
+            <img src="img/icon-search.png" alt="検索ロゴ" />
+          </div>
           <a href="#" class="cartBtn">
             <img src="img/icon-cart.png" alt="カートロゴ" />
           </a>

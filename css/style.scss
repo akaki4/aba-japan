@@ -178,7 +178,8 @@ a {
   top: 10px !important;
 }
 
-.spMenuBtn {
+.spMenuBtn,
+.spSearchBtn {
   display: none;
 }
 
@@ -381,12 +382,6 @@ a {
       }
     }
   }
-  .headerSearchTable {
-    margin-top: 4px;
-    .searchBox {
-      width: 120px !important;
-    }
-  }
   .headerMenu {
     display: none;
   }
@@ -396,6 +391,12 @@ a {
     position: absolute;
     right: 0;
     top: 10px;
+    table {
+      margin-top: 4px;
+    }
+    .searchBox {
+      width: 120px !important;
+    }
   }
 }
 
@@ -409,6 +410,28 @@ a {
   .section-title {
     padding: 50px 0;
     font-size: 18px;
+  }
+
+  /*---------------------------
+  ヘッダー
+  ----------------------------*/
+  .searchForm {
+    display: none;
+  }
+
+  .spMenuBtn {
+    align-items: end;
+  }
+  .spSearchBtn {
+    display: block;
+    border: 1px solid #000;
+    -webkit-appearance: none;
+    width: 44px;
+    height: 32px;
+    img {
+      padding: 6px 12px 6px 12px;
+      height: 20px;
+    }
   }
 
   /*---------------------------
