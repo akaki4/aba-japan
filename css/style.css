@@ -43,10 +43,6 @@ li {
   font-weight: 400;
 }
 
-.mb16 {
-  margin-bottom: 16px;
-}
-
 /*---------------------------
 ここからヘッダー
 ----------------------------*/
@@ -513,91 +509,65 @@ li {
 }
 
 .information__textBox p {
-  line-height: 1.6;
+  line-height: 1.8;
   letter-spacing: 0.2rem;
 }
 
 /*---------------------------
 ここからフッター
 ----------------------------*/
-#footer-wrapper {
+.footer {
+  background-color: #E4E4E3;
+  padding-bottom: 80px;
+}
+
+.footer__title {
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 80px 0;
+  font-weight: 400;
+}
+
+.footer__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 270px;
+  gap: 3.2rem;
+  width: 976px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
-  #footer-wrapper {
-    grid-auto-rows: auto;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #footer-wrapper {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.footer-columns {
-  letter-spacing: 1px;
-}
-
-.footer-columns:nth-child(even) {
-  margin-left: 25px;
-}
-
-.footer-columns:nth-child(odd) {
-  margin-right: 25px;
-}
-
-.footer-columns h3 {
+.footerColumns h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 2.4rem;
   font-weight: normal;
   padding-bottom: 20px;
   border-bottom: 1px solid gray;
 }
 
-@media screen and (max-width: 1024px) {
-  .footer-columns:nth-child(even) {
-    margin-left: 0;
-  }
-  .footer-columns:nth-child(odd) {
-    margin-right: 0;
-  }
-}
-
-.footer-columns-details {
+.footerColumns__details {
   text-align: left;
-  padding: 20px 40px 20px 40px;
-  line-height: 22px;
+  padding: 24px;
+  line-height: 1.6;
 }
 
-.footer-columns-details ul {
-  list-style-type: disc;
+.footerColumns__details--bottomSpace {
+  margin-bottom: 16px;
 }
 
-.footer-columns-details ul li {
-  margin-left: 1.5em;
+.footerColumns__details--red {
+  color: #E57258;
 }
 
-@media screen and (max-width: 600px) {
-  .footer-columns-details {
-    padding: 20px 20px 40px 20px;
-  }
-  .footer-columns-details:nth-child(even) {
-    margin-left: 0;
-  }
-  .footer-columns-details:nth-child(odd) {
-    margin-right: 0;
-  }
+.paymentImages img {
+  vertical-align: top;
+  margin-right: 1.4%;
+  width: 12%;
+}
+
+.paymentImages img:last-child {
+  margin-right: 0;
 }
 
 /*---------------------------
@@ -700,9 +670,6 @@ li {
     width: 120px !important;
   }
   /*---------------------------
-  ここからスライダー
-  ----------------------------*/
-  /*---------------------------
   ここから送料無料
   ----------------------------*/
   .freeShipping {
@@ -773,6 +740,25 @@ li {
   }
   .information__textBox {
     padding: 32px;
+  }
+  /*---------------------------
+  ここからフッター
+  ----------------------------*/
+  .footer__wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+    width: 90%;
+  }
+  .footerColumns h3 {
+    font-size: 2rem;
+  }
+  .footerColumns__details {
+    padding: 16px;
+  }
+  .paymentImages img {
+    margin-right: 1.2%;
+    width: 11%;
   }
 }
 
@@ -890,6 +876,24 @@ li {
   }
   .information__textBox p {
     font-size: 1.6rem;
+  }
+  /*---------------------------
+  ここからフッター
+  ----------------------------*/
+  .footer {
+    padding-bottom: 64px;
+  }
+  .footer__title {
+    line-height: 1.2;
+  }
+  .footer__wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+  .footerColumns__details {
+    text-align: left;
+    padding: 20px 20px 40px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@ $(function () {
     $("#js-spMenu").toggleClass("open");
   });
 
-  // スマートフォン時、検索ボタンをクリックすると検索バーが表示される
+  // スマートフォン時、ヘッダーにある検索ボタンをクリックすると検索バーが表示される
   $(".spSearchBtn").on("click", function () {
     $(".spSearchBtn").hide();
     $("#js-searchForm").show();

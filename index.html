@@ -462,6 +462,7 @@
         </div>
       </section>
       <!-- キーワード検索セクション終了 -->
+      <!-- ここからインフォメーションセクション -->
       <section class="information container">
         <h2 class="sectionTitle">Information</h2>
         <div class="information__container">
@@ -478,48 +479,57 @@
           </div>
         </div>
       </section>
+      <!-- インフォメーションセクション終了 -->
     </main>
-    <footer id="footer" class="container">
-      <h2 class="sectionTitle">SHOP GUIDE</h2>
-      <div id="footer-wrapper">
-        <div class="footer-columns">
+    <!-- メインコンテンツ終了 -->
+    <!-- ここからフッター -->
+    <footer class="footer">
+      <h2 class="footer__title">SHOPPING INFORMATION</h2>
+      <div class="footer__wrapper">
+        <div class="footerColumns">
           <h3>お支払いについて</h3>
-          <div class="footer-columns-details">
-            <p class="mb16">
-              お支払いはクレジットカード、銀行振込、後払い決済、ApplePay、セブンイレブンがご利用いただけます。
+          <div class="footerColumns__details">
+            <p class="footerColumns__details--bottomSpace">
+              お支払い方法は、クレジットカード(VISA、Master、JCB、Diners、Amex)、コンビニ決済、銀行振込がご利用いただけます。
             </p>
-            <p>
-              ※クレジットカードのセキュリティは SSL
-              というシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+            <p class="footerColumns__details--bottomSpace">
+              ※クレジットカードのセキュリティは SSL というシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
             </p>
+            <div class="paymentImages">
+              <img src="img/payment-visa.gif" alt="visa">
+              <img src="img/payment-mastercard.gif" alt="mastercard">
+              <img src="img/payment-diners.gif" alt="diners">
+              <img src="img/payment-jcb.gif" alt="jcb">
+              <img src="img/payment-ginkou.gif" alt="bank">
+              <img src="img/payment-konbini.gif" alt="convenience_store">
+              <img src="img/payment-amex.gif" alt="amex">
+            </div>
           </div>
         </div>
-        <div class="footer-columns">
+        <div class="footerColumns">
           <h3>配送について</h3>
-          <div class="footer-columns-details">
-            <p class="mb16">
-              お支払いはクレジットカード、銀行振込、後払い決済、ApplePay、セブンイレブンがご利用いただけます。
+          <div class="footerColumns__details">
+            <p class="footerColumns__details--bottomSpace">
+              【商品発送のタイミング】特にご指定がない場合、ご入金確認後、各商品ページに記載されている納期の通り発送いたします。
             </p>
             <p>
-              ※クレジットカードのセキュリティは SSL
-              というシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+              ※発送前支払いの場合は、お客様のご入金タイミングにより、お届け予定日が前後することがございます。
             </p>
           </div>
         </div>
-        <div class="footer-columns">
-          <h3>営業時間について</h3>
-          <div class="footer-columns-details">
+        <div class="footerColumns">
+          <h3>営業時間帯について</h3>
+          <div class="footerColumns__details">
             <p>ネットでのご注文は 24 時間受け付けております。</p>
-            <p class="mb16">お電話でのお問合せは下記の時間帯にお願いします。</p>
-            <p class="mb16">平日　9:00-18:00</p>
-            <p>
-              ※土日祝祭日はお休みをいただきます。メールの返信は翌営業日となりますので、ご了承ください。
-            </p>
+            <p>お電話でのお問合せ窓口は現在休止しております。</p>
+            <p class="footerColumns__details--bottomSpace">営業日 : 月~金 10:00 ~ 18:00</p>
+            <p class="footerColumns__details--red">※お問い合わせはメールおよびショップ問合せよりお願い致します。</p>
+            <p class="footerColumns__details--red">※土日祝祭日はお休みをいただきます。</p>
           </div>
         </div>
-        <div class="footer-columns">
+        <div class="footerColumns">
           <h3>プライバシーについて</h3>
-          <div class="footer-columns-details">
+          <div class="footerColumns__details">
             <p>
               お客様からいただいた個人情報は商品の発送とご連絡以外には一切使用致しません。
             </p>
@@ -528,17 +538,26 @@
             </p>
           </div>
         </div>
-        <div class="footer-columns">
-          <h3>お問合わせ</h3>
-          <div class="footer-columns-details">
-            <p>会社名：合同会社AW</p>
-            <p>所在地：文京区湯島３−１８−１０−３０６</p>
-            <p>電話番号：0368235392</p>
-            <p>メールアドレス：natuarc@shop.rakuten.co.jp</p>
+        <div class="footerColumns">
+          <h3>連絡先について</h3>
+          <div class="footerColumns__details">
+            <p>電話番号 : 06-6626-9420</p>
+            <p>メールアドレス : ec@abc-japan.jp</p>
+            <p>住所 : 東京都千代田区外神田2-3-6</p>
+            <p>店舗運営責任者名 : 松原</p>
+          </div>
+        </div>
+        <div class="footerColumns">
+          <h3>返品について</h3>
+          <div class="footerColumns__details">
+            <p>
+              ご注文の返品・交換・キャンセルに関しましては、こちらをご確認ください。
+            </p>
           </div>
         </div>
       </div>
     </footer>
+    <!-- フッター終了 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
