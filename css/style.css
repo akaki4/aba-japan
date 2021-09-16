@@ -181,6 +181,10 @@ li {
   opacity: 1;
 }
 
+.spMenuBtn {
+  display: none;
+}
+
 .close span:nth-of-type(1) {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -218,12 +222,6 @@ li {
   height: auto;
 }
 
-@media screen and (max-width: 1024px) {
-  .slider li {
-    margin: 0;
-  }
-}
-
 .slick-list {
   -webkit-box-shadow: 0 4px 15px -6px gray;
           box-shadow: 0 4px 15px -6px gray;
@@ -254,13 +252,16 @@ li {
 }
 
 .slick-next:before {
-  background: url(../img/arrow-right.png) !important;
+  background: url(../img/slider-arrow-right.svg) !important;
   background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 
 .slick-prev:before {
-  background: url(../img/arrow-left.png) !important;
+  background: url(../img/slider-arrow-left.svg) !important;
   background-size: contain !important;
+  background-repeat: no-repeat !important;
+  left: 60%;
 }
 
 .slick-slider {
@@ -675,6 +676,20 @@ li {
     outline: none;
   }
   /*---------------------------
+  ここからスライダー
+  ----------------------------*/
+  .slider li {
+    margin: 0;
+  }
+  .slick-prev {
+    width: 32px;
+    height: 32px;
+  }
+  .slick-next {
+    width: 32px;
+    height: 32px;
+  }
+  /*---------------------------
   ここから送料無料
   ----------------------------*/
   .freeShipping {
@@ -732,7 +747,7 @@ li {
     width: 42%;
   }
   .ranking__product img:nth-of-type(1) {
-    width: 16%;
+    width: 24%;
   }
   /*---------------------------
   ここからインフォメーション
@@ -789,6 +804,17 @@ li {
             align-items: center;
   }
   /*---------------------------
+  ここからスライダー
+  ----------------------------*/
+  .slick-prev {
+    width: 24px;
+    height: 24px;
+  }
+  .slick-next {
+    width: 24px;
+    height: 24px;
+  }
+  /*---------------------------
   ここから送料無料
   ----------------------------*/
   .freeShipping img {
@@ -831,6 +857,9 @@ li {
     display: block;
     text-align: center;
     padding: 0;
+  }
+  .categoryBox img {
+    margin-right: 0;
   }
   .categoryBox p {
     font-size: 1.6rem;
