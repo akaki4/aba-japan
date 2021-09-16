@@ -441,6 +441,42 @@ li {
 }
 
 /*---------------------------
+ここからランキング
+----------------------------*/
+.ranking {
+  margin-bottom: 80px;
+}
+
+.ranking__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-row-gap: 4.0rem;
+  grid-column-gap: 3.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 976px;
+  margin: 0 auto;
+}
+
+.ranking__product {
+  width: 31%;
+  text-align: center;
+}
+
+.ranking__product img:nth-of-type(1) {
+  width: 20%;
+  margin-bottom: 24px;
+}
+
+.ranking__product img:nth-of-type(2) {
+  width: 100%;
+}
+
+/*---------------------------
 ここからフッター
 ----------------------------*/
 #footer-wrapper {
@@ -671,6 +707,20 @@ li {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  /*---------------------------
+  ここからランキング
+  ----------------------------*/
+  .ranking__list {
+    grid-row-gap: 4rem;
+    grid-column-gap: 4rem;
+    width: 100%;
+  }
+  .ranking__product {
+    width: 42%;
+  }
+  .ranking__product img:nth-of-type(1) {
+    width: 16%;
+  }
 }
 
 /*---------------------------
@@ -758,6 +808,16 @@ li {
   }
   .categoryBox .nosmoking {
     text-align: center;
+  }
+  /*---------------------------
+  ここからランキング
+  ----------------------------*/
+  .ranking__list {
+    grid-row-gap: 2.4rem;
+    grid-column-gap: 2.4rem;
+  }
+  .ranking__product img:nth-of-type(1) {
+    margin-bottom: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
