@@ -4,15 +4,12 @@ $(function () {
     $("#js-hamburgerBtnMenu").toggleClass("close");
     $("#js-spMenu").toggleClass("open");
   });
-  $(".hamburgerSection").on("click", function () {
+  
+  // ハンバーガーメニュー表示時、下部の空白部分をクリックした際の処理
+  $(".hamburgerSpaces").on("click", function () {
     $("#js-spMenu").toggleClass("close");
     $("#js-spMenu").toggleClass("open");
-  });
-
-  // スマートフォン時、ヘッダーにある検索ボタンをクリックすると検索バーが表示される
-  $(".spSearchBtn").on("click", function () {
-    $(".spSearchBtn").hide();
-    $("#js-searchForm").show();
+    $("#js-hamburgerBtnMenu").toggleClass("close");
   });
 
   // スライダーの処理
