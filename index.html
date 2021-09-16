@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+      integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+      crossorigin="anonymous"
+    ></script>
     <title>aba-japan</title>
     <script>
       (function (d) {
@@ -42,142 +48,488 @@
     </script>
   </head>
   <body>
-    <header id="gnav" class="container-md">
-      <div id="gnav-inner">
-        <div class="sp-hamburger-btn">
-          <div class="sp-hamburger-menu">
+    <!-- ここからヘッダー -->
+    <header class="header container">
+      <div class="header__inner">
+        <!-- ハンバーガーメニューボタン -->
+        <div id="js-hamburgerBtn" class="hamburgerBtn">
+          <div id="js-hamburgerBtnMenu" class="hamburgerBtn__menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
-        <ul id="sp-hamburger-list">
-          <li><a href="#" class="hamburger-section">HOME</a></li>
-          <li><a href="#" class="hamburger-section">PRODUCTS</a></li>
-          <li><a href="#" class="hamburger-section">INFORMATION</a></li>
-          <li><a href="#" class="hamburger-section">REVIEW</a></li>
-          <li><a href="#" class="hamburger-section">COMPANY</a></li>
-          <li><a href="#" class="hamburger-section">CONTACT</a></li>
-        </ul>
-        <h1 id="gnav-logo" class="t-center">
-          <a href="#">
-            <img src="img/" alt="aba-japanロゴ" />
+        <!-- ヘッダーロゴ -->
+        <h1 class="header__logo">
+          <a href="https://www.rakuten.co.jp/abajapan">
+            <img src="img/logo.png" alt="aba-japanロゴ" />
           </a>
         </h1>
-        <div class="sp-menu-btn">
-          <a href="#" id="search-btn">
-            <img src="img/" alt="検索ロゴ" />
-          </a>
-          <a href="#" id="cart-btn" class="ml16">
-            <img src="img/" alt="カートロゴ" />
-          </a>
-        </div>
-        <div id="gnav-menu" class="flex">
+        <!-- PC用のグローバルメニュー -->
+        <div class="headerMenu flex">
           <nav>
-            <ul class="gnav-menu-list flex">
+            <ul class="headerMenuList flex">
               <li>
-                <a href="#" class="pl0">HOME</a>
+                <a href="https://www.rakuten.co.jp/abajapan">TOP</a>
               </li>
               <li>
-                <a href="#">PRODUCTS</a>
+                <a href="https://esearch.rakuten.co.jp/rms/sd/esearch/vc?sv=6&sitem=&f=A&su=abajapan&sn=ABCJAPAN&sid=374120">商品検索</a>
               </li>
               <li>
-                <a href="#">配送・返品</a>
+                <a href="https://www.rakuten.co.jp/abajapan/info.html">会社概要</a>
               </li>
               <li>
-                <a href="#">レビュー</a>
+                <a href="https://www.rakuten.co.jp/abajapan/info2.html">決済・配送・返品</a>
               </li>
               <li>
-                <a href="#">会社概要</a>
+                <a href="https://item.rakuten.co.jp/abajapan/c/0000000137">よくある質問</a>
               </li>
               <li>
-                <a href="#">お問い合わせ</a>
+                <!-- 検索ボタン -->
+                <form
+                  method="get"
+                  action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+                >
+                  <table class="headerSearchTable">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input
+                            type="text"
+                            class="searchBox"
+                            name="sitem"
+                            placeholder="商品名を入力"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="image"
+                            src="img/icon-search.png"
+                            class="sendBtn"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <input value="A" type="hidden" name="f" /><input
+                    value="6"
+                    type="hidden"
+                    name="sv"
+                  /><input value="374120" type="hidden" name="sid" />
+                </form>
+              </li>
+              <li>
+                <!-- カードボタン -->
+                <a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cart/?shop_bid=374120&__event=ES01_003_001" class="cartBtn">
+                  <img src="img/icon-cart.png" alt="カートロゴ" />
+                </a>
               </li>
             </ul>
           </nav>
-          <div class="gnav-menu-btn flex">
-            <a href="#" id="search-btn">
-              <img src="img/" alt="検索ロゴ" />
-            </a>
-            <a href="#" id="cart-btn" class="ml16">
-              <img src="img/" alt="カートロゴ" />
-            </a>
-          </div>
         </div>
+        <!-- タブレット、スマートフォンサイズ時の検索、カートボタン -->
+        <div class="spMenuBtn">
+          <!-- 検索ボタンがクリックされるまで非表示 -->
+          <form
+            method="get"
+            action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+            class="searchForm"
+            id="js-searchForm"
+          >
+            <table class="headerSearchTable">
+              <tbody>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="searchBox"
+                      name="sitem"
+                      placeholder="商品名を入力"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="image"
+                      src="img/icon-search.png"
+                      class="sendBtn"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <input value="A" type="hidden" name="f" /><input
+              value="6"
+              type="hidden"
+              name="sv"
+            /><input value="374120" type="hidden" name="sid" />
+          </form>
+          <!-- スマートフォン時、下記の検索ボタンをクリックすると、上記のformタグ内の検索バーが表示される -->
+          <div class="spSearchBtn">
+            <img src="img/icon-search.png" alt="検索ロゴ" />
+          </div>
+          <a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cart/?shop_bid=374120&__event=ES01_003_001" class="cartBtn">
+            <img src="img/icon-cart.png" alt="カートロゴ" />
+          </a>
+        </div>
+        <!-- ハンバーガーメニュークリック時に表示されるグローバルメニュー画面 -->
+        <ul id="js-spMenu" class="spMenu">
+          <li><a href="https://www.rakuten.co.jp/abajapan" class="hamburgerSection">TOP</a></li>
+          <li><a href="https://esearch.rakuten.co.jp/rms/sd/esearch/vc?sv=6&sitem=&f=A&su=abajapan&sn=ABCJAPAN&sid=374120" class="hamburgerSection">商品検索</a></li>
+          <li><a href="https://www.rakuten.co.jp/abajapan/info.html" class="hamburgerSection">会社概要</a></li>
+          <li>
+            <a href="https://www.rakuten.co.jp/abajapan/info2.html" class="hamburgerSection">決済・配送・返品</a>
+          </li>
+          <li><a href="https://item.rakuten.co.jp/abajapan/c/0000000137" class="hamburgerSection">よくある質問</a></li>
+        </ul>
       </div>
     </header>
+    <!-- ヘッダー終了 -->
+    <!-- ここからメインコンテンツ -->
     <main>
-      <section id="slick-container">
-        <ul class="slider" class="slick-slider container-md">
+      <!-- ここからスライダーセクションで商品紹介 -->
+      <section class="slickContainer">
+        <ul class="slider slick-slider">
           <li>
             <a href="#">
-              <img alt="画像2" src="img/" />
+              <img
+                alt="二酸化炭素濃度計"
+                src="img/abcjapan_syohinpage-07.jpg"
+              />
+            </a>
+          </li>
+          <!-- ダミー画像 -->
+          <li>
+            <a href="#">
+              <img
+                alt="二酸化炭素濃度計"
+                src="img/abcjapan_syohinpage-07.jpg"
+              />
             </a>
           </li>
           <li>
             <a href="#">
-              <img alt="画像3" src="img/" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img alt="画像4" src="img/" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img alt="画像5" src="img/" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img alt="画像6" src="img/" />
+              <img
+                alt="二酸化炭素濃度計"
+                src="img/abcjapan_syohinpage-07.jpg"
+              />
             </a>
           </li>
         </ul>
       </section>
+      <!-- スライダーセクション終了 -->
+      <!-- ここから送料無料セクション -->
+      <section class="freeShipping container">
+        <img src="img/free-shipping.png" alt="全国一律送料無料" />
+      </section>
+      <!-- 送料無料セクション終了 -->
+      <!-- ここからキーワード検索セクション -->
+      <section class="keywordSearch">
+        <div class="keywordSearch__container">
+          <!-- キーワード検索フォーム -->
+          <form
+            method="get"
+            action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+          >
+            <table class="keywordSearch__table">
+              <tbody>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="searchBox"
+                      name="sitem"
+                      placeholder="キーワードを入力"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="image"
+                      src="img/icon-search.png"
+                      class="sendBtn"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <input value="A" type="hidden" name="f" /><input
+              value="6"
+              type="hidden"
+              name="sv"
+            /><input value="374120" type="hidden" name="sid" />
+          </form>
+          <!-- 売れ筋商品リスト -->
+          <ul class="hotSellingList">
+            <li class="hotSellingList--text">売れ筋▶︎▶︎</li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/d072101/">サーモマネジャー</a>
+            </li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/d051301/">電子温度計</a>
+            </li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/toa-co2mg-001/">二酸化炭素濃度系</a>
+            </li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/d082402/">アルテケア</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- キーワード検索セクション終了 -->
+      <!-- ここからピックアップセクション -->
+      <section class="pickup container">
+        <h2 class="sectionTitle">Pickup</h2>
+        <a href="https://item.rakuten.co.jp/abajapan/toa-co2mg-001/">
+          <img src="img/abcjapan_syohinpage-07.jpg" alt="二酸化炭素濃度計" class="pickup__topImg">
+        </a>
+        <!-- ピックアップコンテンツ -->
+        <div class="pickup__grid">
+          <a href="https://item.rakuten.co.jp/abajapan/toa-co2mg-001/" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥7,182<small>（税込）</small></p>
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/d072101/" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-01.jpg" alt="サーモマネージャー" />
+            <p>¥43,000<small>（税込）</small></p>
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/d072301/" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-02.jpg" alt="サーモマネージャーEX" />
+            <p>¥46,890<small>（税込）</small></p>
+          </a>
+          <a href="#" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥00,000<small>（税込）</small></p>
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/toa-oxitc-001/" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-03.jpg" alt="オキシテック" />
+            <p>¥2,550<small>（税込）</small></p>
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/d051301/" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-05.jpg" alt="非接触式電子温度計" />
+            <p>¥5,500<small>（税込）</small></p>
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/d082402/" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-06.jpg" alt="アルコール配合スプレー アルケテア" />
+            <p>¥4,050<small>（税込）</small></p>
+          </a>
+          <a href="#" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥00,000<small>（税込）</small></p>
+          </a>
+          <a href="#" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥00,000<small>（税込）</small></p>
+          </a>
+          <a href="#" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥00,000<small>（税込）</small></p>
+          </a>
+          <a href="#" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥00,000<small>（税込）</small></p>
+          </a>
+          <a href="#" class="pickupImgBox">
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計" />
+            <p>¥00,000<small>（税込）</small></p>
+          </a>
+        </div>
+      </section>
+      <!-- ピックアップセクション終了 -->
+      <!-- ここからカテゴリーセクション -->
+      <section class="category">
+        <div class="category__container">
+          <h2 class="sectionTitle">Category</h2>
+          <!-- カテゴリーコンテンツ -->
+          <div class="category__grid">
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000132/" class="categoryBox">
+              <img src="img/icon-category-newlife.png" alt="新生活応援" />
+              <p>新生活応援</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000108/" class="categoryBox">
+              <img src="img/icon-category-hygiene.png" alt="衛生用品" />
+              <p>衛生用品</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000125/" class="categoryBox">
+              <img src="img/icon-category-nosmoking.png" alt="禁煙グッズ加熱式スティック" />
+              <p class="nosmoking">禁煙グッズ<br>加熱式スティック</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000114/" class="categoryBox">
+              <img src="img/icon-category-thermocamera.png" alt="サーモカメラ" />
+              <p>サーモカメラ</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000111/" class="categoryBox">
+              <img src="img/icon-category-electric.png" alt="生活家電" />
+              <p>生活家電</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000120/" class="categoryBox">
+              <img src="img/icon-category-goods.png" alt="雑貨" />
+              <p>雑貨</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000122/" class="categoryBox">
+              <img src="img/icon-category-thermometer.png" alt="温度計" />
+              <p>温度計</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000106/" class="categoryBox">
+              <img src="img/icon-category-beauty.png" alt="健康・美容" />
+              <p>健康・美容</p>
+            </a>
+            <a href="https://item.rakuten.co.jp/abajapan/c/0000000001/" class="categoryBox">
+              <img src="img/icon-category-others.png" alt="その他" />
+              <p>その他</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- カテゴリーセクション終了 -->
+      <!-- ここからランキングセクション -->
+      <section class="ranking container">
+        <h2 class="sectionTitle">Ranking</h2>
+        <div class="ranking__list">
+          <a href="https://item.rakuten.co.jp/abajapan/d072101/" class="ranking__product">
+            <img src="img/ranking-01.png" alt="ランキング1位商品" />
+            <img src="img/abcjapan_syohinpage-01.jpg" alt="サーモマネージャー">
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/toa-co2mg-001/" class="ranking__product">
+            <img src="img/ranking-02.png" alt="ランキング2位商品" />
+            <img src="img/abcjapan_syohinpage-04.jpg" alt="二酸化炭素濃度計">
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/d051301/" class="ranking__product">
+            <img src="img/ranking-03.png" alt="ランキング3位商品" />
+            <img src="img/abcjapan_syohinpage-05.jpg" alt="非接触式電子温度計">
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/toa-oxitc-001/" class="ranking__product">
+            <img src="img/ranking-04.png" alt="ランキング4位商品" />
+            <img src="img/abcjapan_syohinpage-03.jpg" alt="オキシテック">
+          </a>
+          <a href="https://item.rakuten.co.jp/abajapan/d082402/" class="ranking__product">
+            <img src="img/ranking-05.png" alt="ランキング5位商品" />
+            <img src="img/abcjapan_syohinpage-06.jpg" alt="アルコール配合スプレー アルケテア">
+          </a>
+        </div>
+      </section>
+      <!-- ランキングセクション終了 -->
+      <!-- ここからキーワード検索セクション -->
+      <section class="keywordSearch">
+        <div class="keywordSearch__container">
+          <!-- キーワード検索フォーム -->
+          <form
+            method="get"
+            action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc"
+          >
+            <table class="keywordSearch__table">
+              <tbody>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      class="searchBox"
+                      name="sitem"
+                      placeholder="キーワードを入力"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="image"
+                      src="img/icon-search.png"
+                      class="sendBtn"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <input value="A" type="hidden" name="f" /><input
+              value="6"
+              type="hidden"
+              name="sv"
+            /><input value="374120" type="hidden" name="sid" />
+          </form>
+          <!-- 売れ筋商品リスト -->
+          <ul class="hotSellingList">
+            <li class="hotSellingList--text">売れ筋▶︎▶︎</li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/d072101/">サーモマネジャー</a>
+            </li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/d051301/">電子温度計</a>
+            </li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/toa-co2mg-001/">二酸化炭素濃度系</a>
+            </li>
+            <li>
+              <a href="https://item.rakuten.co.jp/abajapan/d082402/">アルテケア</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- キーワード検索セクション終了 -->
+      <!-- ここからインフォメーションセクション -->
+      <section class="information container">
+        <h2 class="sectionTitle">Information</h2>
+        <div class="information__container">
+          <h3>店長からのお知らせ</h3>
+          <div class="information__textBox">
+            <p>平素より当ストアをご愛顧頂きまして誠にありがとうございます。</p>
+            <p>最短日時でお届けご希望の場合、配送日指定を入力しないでください。ご入力いただいた場合、そのお日にちのお届けとなります。(配送日指定は注文日より日後から承ります)また、備考欄はすべて確認することができませんので。</p>
+            <p>必要なご連絡がある場合、ショップのお問い合わせよりご連絡をお願いいたします。(納品書について、平日の配送ご希望等※対応できかねる場合もございます。ご了承ください)</p>
+          </div>
+          <h3>新型コロナウイルス感染予防として、<br>カスタマーサポート一部在宅勤務しております</h3>
+          <div class="information__textBox">
+            <p>お電話での応対ができない場合がございますので、お客様はメールでご連絡、もしくはショップへ問い合わせをお願いいたします。</p>
+            <p>ご不便をおかけいたしますが、ご理解とご協力のほど宜しくお願い致します。</p>
+          </div>
+        </div>
+      </section>
+      <!-- インフォメーションセクション終了 -->
     </main>
-    <footer id="footer" class="container-md">
-      <h2 class="section-title">SHOP GUIDE</h2>
-      <div id="footer-wrapper">
-        <div class="footer-columns">
+    <!-- メインコンテンツ終了 -->
+    <!-- ここからフッター -->
+    <footer class="footer">
+      <h2 class="footer__title">SHOPPING INFORMATION</h2>
+      <div class="footer__wrapper">
+        <div class="footerColumns">
           <h3>お支払いについて</h3>
-          <div class="footer-columns-details">
-            <p class="mb16">
-              お支払いはクレジットカード、銀行振込、後払い決済、ApplePay、セブンイレブンがご利用いただけます。
+          <div class="footerColumns__details">
+            <p class="footerColumns__details--bottomSpace">
+              お支払い方法は、クレジットカード(VISA、Master、JCB、Diners、Amex)、コンビニ決済、銀行振込がご利用いただけます。
             </p>
-            <p>
-              ※クレジットカードのセキュリティは SSL
-              というシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
+            <p class="footerColumns__details--bottomSpace">
+              ※クレジットカードのセキュリティは SSL というシステムを利用しております。カード番号は暗号化されて安全に送信されますので、どうぞご安心ください。
             </p>
+            <div class="paymentImages">
+              <img src="img/payment-visa.gif" alt="visa">
+              <img src="img/payment-mastercard.gif" alt="mastercard">
+              <img src="img/payment-diners.gif" alt="diners">
+              <img src="img/payment-jcb.gif" alt="jcb">
+              <img src="img/payment-ginkou.gif" alt="bank">
+              <img src="img/payment-konbini.gif" alt="convenience_store">
+              <img src="img/payment-amex.gif" alt="amex">
+            </div>
           </div>
         </div>
-        <div class="footer-columns">
+        <div class="footerColumns">
           <h3>配送について</h3>
-          <div class="footer-columns-details">
-            <ul>
-              <li class="pb4">配送は佐川急便でお届けいたします。</li>
-              <li>
-                ご注文確認（前払いの場合ご入金確認）の 2〜3
-                日での発送を行なっております。
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-columns">
-          <h3>営業時間について</h3>
-          <div class="footer-columns-details">
-            <p>ネットでのご注文は 24 時間受け付けております。</p>
-            <p class="mb16">お電話でのお問合せは下記の時間帯にお願いします。</p>
-            <p class="mb16">平日　9:00-18:00</p>
+          <div class="footerColumns__details">
+            <p class="footerColumns__details--bottomSpace">
+              【商品発送のタイミング】特にご指定がない場合、ご入金確認後、各商品ページに記載されている納期の通り発送いたします。
+            </p>
             <p>
-              ※土日祝祭日はお休みをいただきます。メールの返信は翌営業日となりますので、ご了承ください。
+              ※発送前支払いの場合は、お客様のご入金タイミングにより、お届け予定日が前後することがございます。
             </p>
           </div>
         </div>
-        <div class="footer-columns">
+        <div class="footerColumns">
+          <h3>営業時間帯について</h3>
+          <div class="footerColumns__details">
+            <p>ネットでのご注文は 24 時間受け付けております。</p>
+            <p>お電話でのお問合せ窓口は現在休止しております。</p>
+            <p class="footerColumns__details--bottomSpace">営業日 : 月~金 10:00 ~ 18:00</p>
+            <p class="footerColumns__details--red">※お問い合わせはメールおよびショップ問合せよりお願い致します。</p>
+            <p class="footerColumns__details--red">※土日祝祭日はお休みをいただきます。</p>
+          </div>
+        </div>
+        <div class="footerColumns">
           <h3>プライバシーについて</h3>
-          <div class="footer-columns-details">
+          <div class="footerColumns__details">
             <p>
               お客様からいただいた個人情報は商品の発送とご連絡以外には一切使用致しません。
             </p>
@@ -186,17 +538,26 @@
             </p>
           </div>
         </div>
-        <div class="footer-columns">
-          <h3>お問合わせ</h3>
-          <div class="footer-columns-details">
-            <p>会社名：合同会社AW</p>
-            <p>所在地：文京区湯島３−１８−１０−３０６</p>
-            <p>電話番号：0368235392</p>
-            <p>メールアドレス：natuarc@shop.rakuten.co.jp</p>
+        <div class="footerColumns">
+          <h3>連絡先について</h3>
+          <div class="footerColumns__details">
+            <p>電話番号 : 06-6626-9420</p>
+            <p>メールアドレス : ec@abc-japan.jp</p>
+            <p>住所 : 東京都千代田区外神田2-3-6</p>
+            <p>店舗運営責任者名 : 松原</p>
+          </div>
+        </div>
+        <div class="footerColumns">
+          <h3>返品について</h3>
+          <div class="footerColumns__details">
+            <p>
+              ご注文の返品・交換・キャンセルに関しましては、こちらをご確認ください。
+            </p>
           </div>
         </div>
       </div>
     </footer>
+    <!-- フッター終了 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
