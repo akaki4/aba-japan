@@ -162,6 +162,9 @@ li {
   visibility: visible;
   opacity: 1;
 }
+.spMenuBtn {
+  display: none;
+}
 
 .close span:nth-of-type(1) {
   transform: rotate(45deg);
