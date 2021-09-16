@@ -199,11 +199,6 @@ li {
   top: 10px !important;
 }
 
-.spMenuBtn,
-.spSearchBtn {
-  display: none;
-}
-
 /*---------------------------
 ここからスライダー
 ----------------------------*/
@@ -669,6 +664,11 @@ li {
   .spMenuBtn .searchBox {
     width: 120px !important;
   }
+  .spMenuBtn .searchBox input {
+    padding: 2px 0 0 12px;
+    border: none;
+    outline: none;
+  }
   /*---------------------------
   ここから送料無料
   ----------------------------*/
@@ -775,24 +775,13 @@ li {
   /*---------------------------
   ヘッダー
   ----------------------------*/
-  .searchForm {
+  .searchForm .searchBox {
     display: none;
   }
   .spMenuBtn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .spSearchBtn {
-    display: block;
-    border: 1px solid #000;
-    -webkit-appearance: none;
-    width: 44px;
-    height: 32px;
-  }
-  .spSearchBtn img {
-    padding: 6px 12px 6px 12px;
-    height: 20px;
   }
   /*---------------------------
   ここから送料無料
