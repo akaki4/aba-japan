@@ -718,7 +718,7 @@ li {
   }
 
   .spMenuBtn {
-    align-items: end;
+    align-items: center;
   }
   .spSearchBtn {
     display: block;
@@ -731,10 +731,6 @@ li {
       height: 20px;
     }
   }
-
-  /*---------------------------
-  ここからスライダー
-  ----------------------------*/
   
   /*---------------------------
   ここから送料無料
@@ -794,6 +790,9 @@ li {
       font-size: 1.6rem;
       width: 100%;
     }
+    .lineHeightInitial {
+      line-height: initial;
+    }
     .nosmoking {
       text-align: center;
     }
@@ -829,7 +828,7 @@ li {
       }
     }
     &__textBox {
-      padding: 40px 20px;
+      padding: 24px;
       p {
         font-size: 1.6rem;
       }
@@ -840,7 +839,7 @@ li {
   ここからフッター
   ----------------------------*/
   .footer {
-    padding-bottom: 64px;
+    padding-bottom: 40px;
     &__title {
       line-height: 1.2;
     }

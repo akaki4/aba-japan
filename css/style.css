@@ -779,9 +779,9 @@ li {
     display: none;
   }
   .spMenuBtn {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .spSearchBtn {
     display: block;
@@ -794,9 +794,6 @@ li {
     padding: 6px 12px 6px 12px;
     height: 20px;
   }
-  /*---------------------------
-  ここからスライダー
-  ----------------------------*/
   /*---------------------------
   ここから送料無料
   ----------------------------*/
@@ -845,6 +842,9 @@ li {
     font-size: 1.6rem;
     width: 100%;
   }
+  .categoryBox .lineHeightInitial {
+    line-height: initial;
+  }
   .categoryBox .nosmoking {
     text-align: center;
   }
@@ -872,7 +872,7 @@ li {
     display: none;
   }
   .information__textBox {
-    padding: 40px 20px;
+    padding: 24px;
   }
   .information__textBox p {
     font-size: 1.6rem;
@@ -881,7 +881,7 @@ li {
   ここからフッター
   ----------------------------*/
   .footer {
-    padding-bottom: 64px;
+    padding-bottom: 40px;
   }
   .footer__title {
     line-height: 1.2;
