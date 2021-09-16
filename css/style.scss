@@ -41,6 +41,10 @@ li {
   font-weight: 400;
 }
 
+.mb16 {
+  margin-bottom: 16px;
+}
+
 /*---------------------------
 ここからヘッダー
 ----------------------------*/
@@ -407,6 +411,39 @@ li {
 }
 
 /*---------------------------
+ここからインフォメーション
+----------------------------*/
+.information {
+  margin-bottom: 40px;
+  &__container {
+    width: 976px;
+    margin: 0 auto;
+    h3 {
+      padding: 12px 0;
+      background-color: #E57258;
+      font-size: 2.4rem;
+      text-align: center;
+      color: #fff;
+      letter-spacing: 0.2rem;
+    }
+    h3:nth-of-type(2) {
+      line-height: 1.4;
+    }
+  }
+  &__textBox {
+    padding: 40px;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    p {
+      line-height: 1.6;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+
+/*---------------------------
 ここからフッター
 ----------------------------*/
 #footer-wrapper {
@@ -570,8 +607,6 @@ li {
   /*---------------------------
   ここからスライダー
   ----------------------------*/
-  .slickContainer {
-  }
 
   /*---------------------------
   ここから送料無料
@@ -614,6 +649,7 @@ li {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
   /*---------------------------
   ここからカテゴリー
   ----------------------------*/
@@ -625,6 +661,7 @@ li {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
   /*---------------------------
   ここからランキング
   ----------------------------*/
@@ -639,6 +676,21 @@ li {
       img:nth-of-type(1) {
         width: 16%;
       }
+    }
+  }
+  
+  /*---------------------------
+  ここからインフォメーション
+  ----------------------------*/
+  .information {
+    &__container {
+      width: 90%;
+      h3 {
+        font-size: 2.2rem;
+      }
+    }
+    &__textBox {
+      padding: 32px;
     }
   }
 }
@@ -754,6 +806,28 @@ li {
     &__product {
       img:nth-of-type(1) {
         margin-bottom: 10%;
+      }
+    }
+  }
+  
+  /*---------------------------
+  ここからインフォメーション
+  ----------------------------*/
+  .information {
+    &__container {
+      width: 90%;
+      h3 {
+        padding: 16px;
+        font-size: 1.8rem;
+        br {
+          display: none;
+        }
+      }
+    }
+    &__textBox {
+      padding: 40px 20px;
+      p {
+        font-size: 1.6rem;
       }
     }
   }

@@ -43,6 +43,10 @@ li {
   font-weight: 400;
 }
 
+.mb16 {
+  margin-bottom: 16px;
+}
+
 /*---------------------------
 ここからヘッダー
 ----------------------------*/
@@ -477,6 +481,43 @@ li {
 }
 
 /*---------------------------
+ここからインフォメーション
+----------------------------*/
+.information {
+  margin-bottom: 40px;
+}
+
+.information__container {
+  width: 976px;
+  margin: 0 auto;
+}
+
+.information__container h3 {
+  padding: 12px 0;
+  background-color: #E57258;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.information__container h3:nth-of-type(2) {
+  line-height: 1.4;
+}
+
+.information__textBox {
+  padding: 40px;
+  font-size: 1.8rem;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.information__textBox p {
+  line-height: 1.6;
+  letter-spacing: 0.2rem;
+}
+
+/*---------------------------
 ここからフッター
 ----------------------------*/
 #footer-wrapper {
@@ -721,6 +762,18 @@ li {
   .ranking__product img:nth-of-type(1) {
     width: 16%;
   }
+  /*---------------------------
+  ここからインフォメーション
+  ----------------------------*/
+  .information__container {
+    width: 90%;
+  }
+  .information__container h3 {
+    font-size: 2.2rem;
+  }
+  .information__textBox {
+    padding: 32px;
+  }
 }
 
 /*---------------------------
@@ -818,6 +871,25 @@ li {
   }
   .ranking__product img:nth-of-type(1) {
     margin-bottom: 10%;
+  }
+  /*---------------------------
+  ここからインフォメーション
+  ----------------------------*/
+  .information__container {
+    width: 90%;
+  }
+  .information__container h3 {
+    padding: 16px;
+    font-size: 1.8rem;
+  }
+  .information__container h3 br {
+    display: none;
+  }
+  .information__textBox {
+    padding: 40px 20px;
+  }
+  .information__textBox p {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
