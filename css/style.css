@@ -430,6 +430,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   padding: 4px;
+  line-height: 2.8;
 }
 
 .categoryBox:hover {
@@ -445,12 +446,12 @@ li {
   border-bottom: 1px solid #000;
   width: 70%;
   text-align: center;
-  font-size: 2.4rem;
-  padding-bottom: 16px;
+  font-size: 2rem;
+  padding-bottom: 8px;
 }
 
 .categoryBox .nosmoking {
-  text-align: left;
+  line-height: 1.4;
 }
 
 /*---------------------------
@@ -626,7 +627,7 @@ li {
     top: 20px;
   }
   .hamburgerBtn__menu {
-    margin-left: 8px;
+    margin-left: 20px;
     min-width: 30px;
     height: 24px;
     -webkit-box-sizing: border-box;
@@ -691,6 +692,9 @@ li {
     border: none;
     outline: none;
   }
+  .spMenuBtn .cartBtn {
+    margin-right: 8px;
+  }
   /*---------------------------
   ここからスライダー
   ----------------------------*/
@@ -750,6 +754,9 @@ li {
   .category__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .categoryBox p {
+    font-size: 1.8rem;
   }
   /*---------------------------
   ここからランキング
@@ -880,12 +887,6 @@ li {
   .categoryBox p {
     font-size: 1.6rem;
     width: 100%;
-  }
-  .categoryBox .lineHeightInitial {
-    line-height: initial;
-  }
-  .categoryBox .nosmoking {
-    text-align: center;
   }
   /*---------------------------
   ここからランキング
