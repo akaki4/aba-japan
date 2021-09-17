@@ -587,7 +587,6 @@ li {
   }
   .sectionTitle {
     font-size: 4.8rem;
-    padding: 56px 0;
   }
   /*---------------------------
   ここからヘッダー
@@ -705,6 +704,9 @@ li {
   /*---------------------------
   ここからキーワード検索
   ----------------------------*/
+  .keywordSearch {
+    padding: 32px 0;
+  }
   .keywordSearch__container {
     width: 90%;
   }
@@ -723,7 +725,6 @@ li {
   ----------------------------*/
   .pickup {
     width: 90%;
-    margin: 0 auto 56px;
   }
   .pickup__grid {
     -ms-grid-columns: (1fr)[2];
@@ -798,6 +799,7 @@ li {
   ----------------------------*/
   .sectionTitle {
     font-size: 3.2rem;
+    padding: 56px 0;
   }
   /*---------------------------
   ヘッダー
@@ -843,7 +845,7 @@ li {
   ここからピックアップ
   ----------------------------*/
   .pickup {
-    width: 90%;
+    margin: 0 auto 56px;
   }
   .pickup__topImg {
     margin-bottom: 40px;
@@ -856,6 +858,9 @@ li {
   /*---------------------------
   ここからカテゴリー
   ----------------------------*/
+  .category {
+    padding-bottom: 56px;
+  }
   .category__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -867,6 +872,7 @@ li {
   }
   .categoryBox img {
     margin-right: 0;
+    margin-bottom: -16px;
   }
   .categoryBox p {
     font-size: 1.6rem;
@@ -875,6 +881,9 @@ li {
   /*---------------------------
   ここからランキング
   ----------------------------*/
+  .ranking {
+    margin-bottom: 56px;
+  }
   .ranking__list {
     grid-row-gap: 2.4rem;
     grid-column-gap: 2.4rem;
@@ -885,6 +894,9 @@ li {
   /*---------------------------
   ここからインフォメーション
   ----------------------------*/
+  .information {
+    margin-bottom: 32px;
+  }
   .information__container {
     width: 90%;
   }
@@ -905,9 +917,10 @@ li {
   ここからフッター
   ----------------------------*/
   .footer {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
   }
   .footer__title {
+    padding: 56px 0;
     line-height: 1.2;
   }
   .footer__wrapper {
