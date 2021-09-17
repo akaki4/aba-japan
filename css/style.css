@@ -98,7 +98,7 @@ li {
 }
 
 .headerMenuList li .cartBtn:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .headerMenuList li .cartBtn img {
@@ -368,6 +368,10 @@ li {
   margin-bottom: 64px;
 }
 
+.pickup__topImg:hover {
+  opacity: 0.5;
+}
+
 .pickup__grid {
   display: -ms-grid;
   display: grid;
@@ -378,6 +382,10 @@ li {
 
 .pickupImgBox {
   text-align: center;
+}
+
+.pickupImgBox:hover {
+  opacity: 0.5;
 }
 
 .pickupImgBox img {
@@ -425,6 +433,10 @@ li {
   line-height: 2.8;
 }
 
+.categoryBox:hover {
+  opacity: 0.5;
+}
+
 .categoryBox img {
   width: 30%;
   margin-right: 12px;
@@ -467,6 +479,10 @@ li {
 .ranking__product {
   width: 31%;
   text-align: center;
+}
+
+.ranking__product:hover {
+  opacity: 0.5;
 }
 
 .ranking__product img:nth-of-type(1) {
