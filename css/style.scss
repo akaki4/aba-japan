@@ -516,7 +516,6 @@ li {
   
   .sectionTitle {
     font-size: 4.8rem;
-    padding: 56px 0;
   }
 
   /*---------------------------
@@ -636,6 +635,7 @@ li {
   ここからキーワード検索
   ----------------------------*/
   .keywordSearch {
+    padding: 32px 0;
     &__container {
       width: 90%;
       form {
@@ -658,7 +658,6 @@ li {
   ----------------------------*/
   .pickup {
     width: 90%;
-    margin: 0 auto 56px;
     &__grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -748,6 +747,7 @@ li {
   ----------------------------*/
   .sectionTitle {
     font-size: 3.2rem;
+    padding: 56px 0;
   }
 
   /*---------------------------
@@ -807,7 +807,7 @@ li {
   ここからピックアップ
   ----------------------------*/
   .pickup {
-    width: 90%;
+    margin: 0 auto 56px;
     &__topImg {
       margin-bottom: 40px;
     }
@@ -821,6 +821,7 @@ li {
   ここからカテゴリー
   ----------------------------*/
   .category {
+    padding-bottom: 56px;
     &__grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -831,6 +832,7 @@ li {
     padding: 0;
     img {
       margin-right: 0;
+      margin-bottom: -16px;
     }
     p {
       font-size: 1.6rem;
@@ -842,6 +844,7 @@ li {
   ここからランキング
   ----------------------------*/
   .ranking {
+    margin-bottom: 56px;
     &__list {
       grid-row-gap: 2.4rem;
       grid-column-gap: 2.4rem;
@@ -857,6 +860,7 @@ li {
   ここからインフォメーション
   ----------------------------*/
   .information {
+    margin-bottom: 32px;
     &__container {
       width: 90%;
       h3 {
@@ -879,8 +883,9 @@ li {
   ここからフッター
   ----------------------------*/
   .footer {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     &__title {
+      padding: 56px 0;
       line-height: 1.2;
     }
     &__wrapper {
