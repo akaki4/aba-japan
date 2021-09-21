@@ -212,7 +212,7 @@ li {
   left: 0;
   z-index: 10;
   width: 40px;
-  height: 40px; 
+  height: 40px;
 }
 
 .slick-next {
@@ -347,7 +347,7 @@ li {
 ここからカテゴリー
 ----------------------------*/
 .category {
-  background-color: #E4E4E3;
+  background-color: #e4e4e3;
   padding-bottom: 80px;
   &__container {
     width: 976px;
@@ -388,7 +388,7 @@ li {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    grid-row-gap: 4.0rem;
+    grid-row-gap: 4rem;
     grid-column-gap: 3.2rem;
     justify-content: center;
     width: 976px;
@@ -408,6 +408,13 @@ li {
 }
 
 /*---------------------------
+ここからスマートフォン限定のバナー
+----------------------------*/
+.spBanner {
+  display: none;
+}
+
+/*---------------------------
 ここからインフォメーション
 ----------------------------*/
 .information {
@@ -417,7 +424,7 @@ li {
     margin: 0 auto;
     h3 {
       padding: 12px 0;
-      background-color: #E57258;
+      background-color: #e57258;
       font-size: 2.4rem;
       text-align: center;
       color: #fff;
@@ -433,7 +440,7 @@ li {
     text-align: justify;
     text-justify: inter-ideograph;
     p {
-      line-height: 1.8;
+      line-height: 1.6;
       letter-spacing: 0.2rem;
     }
   }
@@ -443,7 +450,7 @@ li {
 ここからフッター
 ----------------------------*/
 .footer {
-  background-color: #E4E4E3;
+  background-color: #e4e4e3;
   padding-bottom: 80px;
   &__title {
     font-size: 3.2rem;
@@ -475,7 +482,7 @@ li {
       margin-bottom: 16px;
     }
     &--red {
-      color: #E57258;
+      color: #e57258;
     }
   }
 }
@@ -504,7 +511,7 @@ li {
   .container {
     width: 100%;
   }
-  
+
   .sectionTitle {
     font-size: 4.8rem;
   }
@@ -594,7 +601,7 @@ li {
       margin-right: 8px;
     }
   }
-  
+
   /*---------------------------
   ここからスライダー
   ----------------------------*/
@@ -605,7 +612,7 @@ li {
   }
   .slick-prev {
     width: 32px;
-    height: 32px; 
+    height: 32px;
   }
   .slick-next {
     width: 32px;
@@ -643,7 +650,7 @@ li {
       margin: 8px;
     }
   }
-  
+
   /*---------------------------
   ここからピックアップ
   ----------------------------*/
@@ -687,7 +694,7 @@ li {
       }
     }
   }
-  
+
   /*---------------------------
   ここからインフォメーション
   ----------------------------*/
@@ -702,7 +709,7 @@ li {
       padding: 32px;
     }
   }
-  
+
   /*---------------------------
   ここからフッター
   ----------------------------*/
@@ -753,19 +760,19 @@ li {
   .spMenuBtn {
     align-items: center;
   }
-  
+
   /*---------------------------
   ここからスライダー
   ----------------------------*/
   .slick-prev {
     width: 24px;
-    height: 24px; 
+    height: 24px;
   }
   .slick-next {
     width: 24px;
     height: 24px;
   }
-  
+
   /*---------------------------
   ここから送料無料
   ----------------------------*/
@@ -774,7 +781,7 @@ li {
       width: 90%;
     }
   }
-  
+
   /*---------------------------
   ここからキーワード検索
   ----------------------------*/
@@ -793,7 +800,7 @@ li {
       margin: 6px;
     }
   }
-  
+
   /*---------------------------
   ここからピックアップ
   ----------------------------*/
@@ -807,7 +814,7 @@ li {
       gap: 1.6rem;
     }
   }
-  
+
   /*---------------------------
   ここからカテゴリー
   ----------------------------*/
@@ -830,12 +837,12 @@ li {
       width: 100%;
     }
   }
-  
+
   /*---------------------------
   ここからランキング
   ----------------------------*/
   .ranking {
-    margin-bottom: 56px;
+    margin-bottom: 32px;
     &__list {
       grid-row-gap: 2.4rem;
       grid-column-gap: 2.4rem;
@@ -846,7 +853,22 @@ li {
       }
     }
   }
-  
+
+  /*---------------------------
+  ここからスマートフォン限定のバナー
+  ----------------------------*/
+  .spBanner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    width: 90%;
+    margin: 0 auto 56px;
+    a {
+      img {
+        width: 100%;
+      }
+    }
+  }
   /*---------------------------
   ここからインフォメーション
   ----------------------------*/
@@ -869,7 +891,7 @@ li {
       }
     }
   }
-  
+
   /*---------------------------
   ここからフッター
   ----------------------------*/
@@ -884,7 +906,7 @@ li {
       gap: 0;
     }
   }
-  
+
   .footerColumns {
     &__details {
       text-align: left;

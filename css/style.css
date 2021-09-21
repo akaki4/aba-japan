@@ -397,7 +397,7 @@ li {
 ここからカテゴリー
 ----------------------------*/
 .category {
-  background-color: #E4E4E3;
+  background-color: #e4e4e3;
   padding-bottom: 80px;
 }
 
@@ -455,7 +455,7 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  grid-row-gap: 4.0rem;
+  grid-row-gap: 4rem;
   grid-column-gap: 3.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -479,6 +479,13 @@ li {
 }
 
 /*---------------------------
+ここからスマートフォン限定のバナー
+----------------------------*/
+.spBanner {
+  display: none;
+}
+
+/*---------------------------
 ここからインフォメーション
 ----------------------------*/
 .information {
@@ -492,7 +499,7 @@ li {
 
 .information__container h3 {
   padding: 12px 0;
-  background-color: #E57258;
+  background-color: #e57258;
   font-size: 2.4rem;
   text-align: center;
   color: #fff;
@@ -511,7 +518,7 @@ li {
 }
 
 .information__textBox p {
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 0.2rem;
 }
 
@@ -519,7 +526,7 @@ li {
 ここからフッター
 ----------------------------*/
 .footer {
-  background-color: #E4E4E3;
+  background-color: #e4e4e3;
   padding-bottom: 80px;
 }
 
@@ -559,7 +566,7 @@ li {
 }
 
 .footerColumns__details--red {
-  color: #E57258;
+  color: #e57258;
 }
 
 .paymentImages img {
@@ -882,7 +889,7 @@ li {
   ここからランキング
   ----------------------------*/
   .ranking {
-    margin-bottom: 56px;
+    margin-bottom: 32px;
   }
   .ranking__list {
     grid-row-gap: 2.4rem;
@@ -890,6 +897,21 @@ li {
   }
   .ranking__product img:nth-of-type(1) {
     margin-bottom: 10%;
+  }
+  /*---------------------------
+  ここからスマートフォン限定のバナー
+  ----------------------------*/
+  .spBanner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    width: 90%;
+    margin: 0 auto 56px;
+  }
+  .spBanner a img {
+    width: 100%;
   }
   /*---------------------------
   ここからインフォメーション
